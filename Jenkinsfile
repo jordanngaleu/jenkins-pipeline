@@ -11,9 +11,10 @@ pipeline {
         sh 'echo "test"'
     }
   }
-    stage('build')
+    stage('build') {
     steps{
         sh 'touch text-$BUILD_ID'
+    }
     }  
     }
 }
