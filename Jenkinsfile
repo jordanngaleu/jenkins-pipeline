@@ -6,12 +6,12 @@ pipeline {
                 sh 'echo "clone"'
             }
         }
-  stage('test'){
+    stage('test'){
     steps{
         sh 'echo "test"'
     }
   }
-  stage('build')
+    stage('build')
     steps{
         sh 'touch text-$BUILD_ID'
     }  
